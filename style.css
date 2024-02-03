@@ -1,0 +1,21 @@
+.attribution 
+{
+    font-size: 11px; text-align: center; 
+}
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%); 
+}
+:root
+{
+
+}
+body
+{
+    background-color: hsl(216, 12%, 8%);
+    color: white;
+}
+.round-box
+{
+    border-radius: 50%;
+}
