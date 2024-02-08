@@ -31,18 +31,11 @@ body
     flex-direction:column;
     justify-content: center;
     align-items: center;
-}
-.text-box
-{
     font-family: var(--font-style);
 }
 .text-box h1
 {
     font-weight: 700;
-}
-.text-box p{
-    font-weight: 400;
-    color: var(--medium-grey);
 }
 main{
     background-color: var(--dark-blue);
@@ -58,13 +51,18 @@ main{
 {
     border-radius: 50%;
     border-style: none;
-    background-color:hsl(211, 20%, 27%);
+    background-color:hsla(216, 12%, 54%, 0.151);
     color: var(--medium-grey);
     width:45px;
     height:45px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.rating-box:hover
+{
+    background-color: var(--light-grey);
+    color: white;
 }
 .rating-box-container
 {
@@ -81,4 +79,36 @@ main{
     border-radius: 35px;
     color: white;
     font-size: larger;
+}
+.submitbtn:hover{
+    background-color: white;
+    color: var(--orange);
+}
+.thankyouimg
+{
+    width:50%;
+    height:auto;
+}
+.thankyoustate
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.thankyoutext
+{
+    text-align: center;
+}
+.msgbox
+{
+    background-color: hsla(216, 12%, 54%, 0.151);
+    padding:8px 15px;
+    border-radius: 30px;
+    color: var(--orange);
+}
+.greyfont
+{
+    color: var(--medium-grey);
+    font-weight: 400;
+    font-size: 15px;
 }
