@@ -8,46 +8,47 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <main> -->
-      <!--------------------- Rating state start ------------------->
+<!--------------------- Rating state start ------------------->
+  <main class="ratingmain"> 
+    <div class ="round-btn">
+      <img src="images/icon-star.svg" alt="">
+    </div>
+    <div class="text-box">
+      <h1>How did we do?</h1>
+      <p class="greyfont"> 
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+    </div>
+    <div class="rating-btn-container">
+      <button class="rating-btn round-btn" onclick="setrating(1)">1</button>
+      <button class="rating-btn round-btn" onclick="setrating(2)">2</button>
+      <button class="rating-btn round-btn" onclick="setrating(3)">3</button>
+      <button class="rating-btn round-btn" onclick="setrating(4)">4</button>
+      <button class="rating-btn round-btn" onclick="setrating(5)">5</button>
+    </div>
+    <button type="submit" class="submitbtn">SUBMIT</button>
+  </main> 
+<!--------------------- Rating state end ----------------------->
 
-      <!-- <div class ="round-box">
-        <img src="images/icon-star.svg" alt="">
-      </div>
-      <div class="text-box">
-        <h1>How did we do?</h1>
-        <p> 
-          Please let us know how we did with your support request. All feedback is appreciated 
-          to help us improve our offering!
-        </p>
-      </div>
-      <div class="rating-box-container">
-        <button class="rating-box round-box">1</button>
-        <button class="rating-box round-box">2</button>
-        <button class="rating-box round-box">3</button>
-        <button class="rating-box round-box">4</button>
-        <button class="rating-box round-box">5</button>
-      </div>
-      <button type="submit" class="submitbtn">SUBMIT</button> -->
-      <!--------------------- Rating state end ----------------------->
-    <!-- </main> -->
-    <main class="thankyoustate">
-      <!-----------------Thank you state start --------------------->
-      <img src="images/illustration-thank-you.svg" alt="thankyou" class="thankyouimg">
-      <div class="msgbox">
-        You selected <span>4</span> out of 5
-      </div>
-      <div class="thankyoutext">
-        <h1>
-          Thank You!
-        </h1>
-        <P class="greyfont">
-          We appreciate you taking the time to give a rating. If you ever need more support, 
-          don’t hesitate to get in touch!
-        </P>
-      </div> 
-    <!--------------------- Thank you state end ---------------------->
-    </main>
+<!-----------------Thank you state start --------------------->
+  <main class="thankyoumain">
+    <img src="images/illustration-thank-you.svg" alt="thankyou" class="thankyouimg">
+    <div class="msgbox">
+      You selected <span id ="rvalue"></span> out of 5
+    </div>
+    <div class="thankyoutext">
+      <h1>
+        Thank You!
+      </h1>
+      <P class="greyfont">
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+      </P>
+    </div> 
+  </main>
+<!--------------------- Thank you state end ---------------------->
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
