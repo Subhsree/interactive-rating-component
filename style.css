@@ -33,7 +33,7 @@ body
     align-items: center;
     font-family: var(--font-style);
 }
-.text-box h1
+.text-btn h1
 {
     font-weight: 700;
 }
@@ -45,9 +45,9 @@ main{
     padding:5vmin;
     display:flex ;
     flex-direction: column;
-    justify-content: space-between;
+    gap:5px;
 }
-.round-box
+.round-btn
 {
     border-radius: 50%;
     border-style: none;
@@ -59,12 +59,12 @@ main{
     align-items: center;
     justify-content: center;
 }
-.rating-box:hover
+.rating-btn:hover
 {
     background-color: var(--light-grey);
     color: white;
 }
-.rating-box-container
+.rating-btn-container
 {
     display: flex;
     flex-direction: row;
@@ -74,11 +74,12 @@ main{
 {
     width:100%;
     background-color: var(--orange);
-    padding:18px 0px;
+    padding:15px 0px;
     border: none;
     border-radius: 35px;
     color: white;
     font-size: larger;
+    margin-top: 15px;
 }
 .submitbtn:hover{
     background-color: white;
@@ -89,11 +90,12 @@ main{
     width:50%;
     height:auto;
 }
-.thankyoustate
+.thankyoumain
 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: none;
 }
 .thankyoutext
 {
@@ -111,4 +113,20 @@ main{
     color: var(--medium-grey);
     font-weight: 400;
     font-size: 15px;
+}
+@media screen and (max-width: 400px) {
+    main
+    {
+        width:80vw;
+        height: 50vh;
+    }
+    
+}
+@media screen and (max-width:650px) {
+    main
+    {
+        width:80vw;
+        height: 50vh;
+    }
+   
 }
